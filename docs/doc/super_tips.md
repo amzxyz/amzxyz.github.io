@@ -6,6 +6,28 @@
 
 ---
 
+## 🎨 视觉直观：无处不在的智能外挂
+
+!!! success "多模态提示能力演示"
+    **万象的 Super Tips 能够极其丝滑地识别并提示不同类型的数据内容。以下是部分功能的实战截图，感受指尖的智能连击：**
+
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: flex-end; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
+        <div style="text-align: center;">
+            <img src="https://storage.deepin.org/thread/202509260128462735_tips化学式.jpg" style="height: 100px; width: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <p style="font-size: 0.85em; color: #666; margin-top: 0.8rem;">🧪 化学式输入示例</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://storage.deepin.org/thread/202509260128454675_tips符号.jpg" style="height: 100px; width: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <p style="font-size: 0.85em; color: #666; margin-top: 0.8rem;">🔢 特殊符号输入示例</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://storage.deepin.org/thread/202509260128457494_tips表情.jpg" style="height: 100px; width: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05);">
+            <p style="font-size: 0.85em; color: #666; margin-top: 0.8rem;">🤣 Emoji 表情输入示例</p>
+        </div>
+    </div>
+
+---
+
 ## 🚫 核心使用哲学与性能边界
 
 !!! warning "性能与体验警告 (PERFORMANCE WARNING)"
@@ -32,11 +54,14 @@
 ```yaml
 patch:
   # 修改 Super Tips 核心参数
-  "super_tips/tips_key": "comma"           # 默认逗号，可改为 "period", "semicolon" 等
-  "super_tips/disabled_types":             # 在下方列表内填入你想禁用的类型
+  super_tips/tips_key: "comma"           # 默认逗号，可改为 "period", "semicolon" 等
+  super_tips/disabled_types:             # 在下方列表内填入你想禁用的类型
     - "化学式"
     - "车牌"
     - "货币"
+  # 追加用户自己的 tips 文件
+  super_tips/files/+: 
+    - lua/data/my_tips.txt
 ```
 
 ---
