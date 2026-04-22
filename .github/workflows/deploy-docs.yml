@@ -5,11 +5,7 @@ on:
   workflow_dispatch: # 手动触发
   push:
     branches:
-      - wanxiang
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
-      - '.github/workflows/deploy-docs.yml'
+      - main
 # 权限设置：允许机器人写入 gh-pages 分支
 permissions:
   contents: write
