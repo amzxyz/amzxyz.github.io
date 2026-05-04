@@ -70,11 +70,11 @@
 grammar:
   language: wanxiang-lts-zh-hans
   collocation_max_length: 8
-  collocation_min_length: 2
-  collocation_penalty: -5
-  non_collocation_penalty: 0
-  weak_collocation_penalty: -35
-  rear_penalty: -12
+  collocation_min_length: 3
+  collocation_penalty: -10
+  non_collocation_penalty: -5
+  weak_collocation_penalty: -100
+  rear_penalty: -5
 ```
 
 这些枯燥的数字背后，隐藏着万象极致调优的秘密：
@@ -85,10 +85,10 @@ grammar:
 * **`collocation_max_length: 8` (超广角上下文视野)**
   这是万象长句连打不断词的绝对核心。传统的输入模型通常只能往前看 2 到 3 个词，而万象的视野拉伸到了惊人的 **8 个词法单元**。它能极其敏锐地捕捉到句子开头和结尾的呼应关系，让整句推断稳如泰山。
 
-* **`weak_collocation_penalty: -35` (严厉的弱搭配惩罚)**
+* **`weak_collocation_penalty: -100` (严厉的弱搭配惩罚)**
   “惩罚机制”是语言模型的灵魂。`-35` 是一个极具攻击性的惩罚值。它的存在，意味着万象会对那些“语法生硬、逻辑不通、极低频”的字词组合下狠手，直接将它们打入冷宫，彻底杜绝了候选词里出现“狗屁不通”组合的可能。
 
-* **`rear_penalty: -12` (尾部边界调优)**
+* **`rear_penalty: -5` (尾部边界调优)**
   针对句子末尾（如语气词、标点前）的特殊概率惩罚设定。它使得万象在处理“了吧”、“的呢”等句末结构时更加自然，贴合真实人类的表达习惯。
 
 ---

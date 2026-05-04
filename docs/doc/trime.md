@@ -71,4 +71,4 @@
     
     👉 **操作方法**：直接在任意输入框打字输入以下对应指令，然后再回 APP 点击一次 **【重新部署】**。
 
-    --8<-- "docs/dco/slash_commands.md"
+    --8<-- "docs/doc/slash_commands.md"

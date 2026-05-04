@@ -124,11 +124,11 @@ patch:
 grammar:
   language: wanxiang-lts-zh-hans
   collocation_max_length: 8
-  collocation_min_length: 2
-  collocation_penalty: -5
-  non_collocation_penalty: 0
-  weak_collocation_penalty: -35
-  rear_penalty: -12
+  collocation_min_length: 3
+  collocation_penalty: -10
+  non_collocation_penalty: -5
+  weak_collocation_penalty: -100
+  rear_penalty: -5
 ```
 
 ```yaml title="右：wanxiang.custom.yaml"

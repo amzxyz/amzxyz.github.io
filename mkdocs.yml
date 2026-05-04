@@ -83,29 +83,39 @@ nav:
             - 使用东风破 Plum: doc/plum.md
             - 手动设置: doc/manual.md
       
-  - ⌨️ 核心输入体系:
-      - 辅助码系统全解: doc/aux_code.md     # 包含直接/间接辅码、候选筛选、输入前反查、声调辅查
-      - 中英混输与独立英文: doc/english_mixed.md
-      - 14/18键特殊键盘转写: doc/t9_layouts.md
-      - 错音错字与造词系统: doc/word_creation.md # 包含按需造词、无感造词、错音提示
+  - ⌨️ 基础功能体系:
+      - 📂 万象目录架构: doc/rime_tree.md
+      - ⌨️ 辅助码系统全解: doc/aux_code.md
+      - 🧩 生僻字反查系统: doc/reverse_lookup.md
+      - 🔠 中英与混合编码: doc/english.md
+      - 📱 9/14/18键转写: doc/layouts.md
+      - 🗣️ 模糊音配置指南: doc/fuzzy.md
+      - ✍️ 高阶造词指南: doc/custom_words.md
+      - 💡 错音错字提示: doc/word_creation.md
       
   - 🪄 超强Lua魔法扩展:
       - 📅 时间日期: doc/shijian.md
       - 💬 超级注释: doc/super_comment.md
       - 💡 智能提示: doc/super_tips.md
+      - 🔍 候选辅筛: doc/super_lookup.md
+      - 🔮 预测调频: doc/user_predict.md
+      - 📊 输入统计: doc/input_statistics.md
+      - 🔄 超级替换: doc/super_replacer.md
+      - 🔀 手动排序: doc/super_sequence.md
       - ⚡ 快速符号: doc/quick_symbol.md
       - 📦 成对符号: doc/paired_symbols.md
       - 🔢 按键事件: doc/super_processor.md
-      - 🔄 超级替换: doc/super_replacer.md
-      - 🔄 手动排序: doc/super_sequence.md
+      - 🔣 字符过滤: doc/charset.md
+      - ⚔️ 候选切割: doc/candidate_slicer.md
+      - 🔣 NRU模式: doc/NRU.md
       
   - 🛠️ 进阶配置:
-      - rime工作机制: doc/Rime设计逻辑与配置哲学.md
-      - patch方法论: doc/patch方法论.md
-      - 自定义万象方案: doc/schema_custom.md
-      - 词库与数据管理: doc/data_dict.md
-      - RIME方案配置手册: doc/RIME输入法方案配置手册.md
-      - RIME配置指南: doc/RIME配置指南.md
+      - ⚙️ rime工作机制: doc/Rime设计逻辑与配置哲学.md
+      - 🛠️ patch方法论: doc/patch方法论.md
+      - 🎛️ 自定义万象方案: doc/schema_custom.md
+      - 📚 词库管理与同步: doc/dicts.md
+      - 📖 RIME配置手册: doc/RIME配置手册.md
+      - 🧭 RIME配置指南: doc/RIME配置指南.md
       
   - 🌍 生态与附录:
       - 万象双拼键位图: doc/wanxiang_shuangpin.md

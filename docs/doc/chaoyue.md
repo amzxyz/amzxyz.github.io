@@ -82,4 +82,4 @@
     
     👉 **操作方法**：在任意输入框（中文状态下），直接打字输入以下对应指令，然后回到 APP **再次点击【刷新】（重新部署）** 即可生效。
 
-    --8<-- "docs/dco/slash_commands.md"
+    --8<-- "docs/doc/slash_commands.md"

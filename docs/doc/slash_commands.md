@@ -9,7 +9,6 @@
 /gbpy     → 国标双拼
 /lxsq     → 乱序17
 /pinyin   → 全拼
-/wxsp     → 万象双拼
 /zrlong   → 自然龙(反查是全拼)
 /hxlong   → 汉心龙(反查是全拼)
 /jjf      → 间接辅助

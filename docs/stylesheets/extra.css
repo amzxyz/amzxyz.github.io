@@ -125,18 +125,19 @@
 }
 
 /* =========================================
-   7. 标签页文字与横线：彻底修复隐身与色条
+   7. 标签页文字与横线：彻底修复隐身与常驻色块
    ========================================= */
 .md-tabs__list {
   gap: 16px; 
 }
 
-.md-tabs__list .md-tabs__link {
+/* 1. 默认状态：平时安安静静，透明底色 */
+.md-tabs__list .md-tabs__item .md-tabs__link {
   color: #333333 !important; 
   font-weight: 600 !important;
   font-size: 15px !important;
   opacity: 0.8 !important;
-  background-color: transparent !important;
+  background-color: transparent !important; /* 平时透明 */
   text-shadow: none !important; 
   padding: 8px 16px !important; 
   border-radius: 6px !important; 
@@ -144,38 +145,44 @@
   position: relative;
 }
 
-.md-tabs__list .md-tabs__link:hover {
+/* 2. 悬浮状态：鼠标滑过时微微发绿 */
+.md-tabs__list .md-tabs__item .md-tabs__link:hover {
   opacity: 1 !important;
   color: #61A165 !important; 
   background-color: rgba(97, 161, 101, 0.05) !important; 
 }
 
-.md-tabs__list .md-tabs__link--active {
+/* 👇 3. 终极修复：当前停留页面的常驻色块（不管版本怎么变，双重锁定） */
+.md-tabs__list .md-tabs__item .md-tabs__link.md-tabs__link--active,
+.md-tabs__item--active .md-tabs__link {
   opacity: 1 !important;
   color: #61A165 !important; 
   font-weight: 800 !important;
-  background-color: transparent !important;
+  /* 强制锁定常驻莫兰迪绿底色！走到哪亮到哪！ */
+  background-color: rgba(97, 161, 101, 0.12) !important; 
 }
 
-/* 👇 核心修复：把 bottom 改回 0，确保莫兰迪绿色条不被隐藏！ */
+/* =========================================
+   横线动画部分（保持你原来的漂亮下划线不变）
+   ========================================= */
 .md-tabs__list .md-tabs__link::after {
   content: "";
   position: absolute;
-  bottom: 0; /* 贴紧文字框的内底边 */
+  bottom: 0; 
   left: 0;
   width: 100%;
   height: 3px; 
-  background-color: #61A165 !important; /* 强制纯正莫兰迪绿 */
+  background-color: #61A165 !important; 
   border-radius: 4px 4px 0 0;
   transform: scaleX(0); 
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.md-tabs__list .md-tabs__link--active::after {
+.md-tabs__list .md-tabs__link.md-tabs__link--active::after,
+.md-tabs__item--active .md-tabs__link::after {
   transform: scaleX(1);
 }
 
-/* 悬浮时色条保持 100% 显色，不发虚 */
 .md-tabs__list .md-tabs__link:hover::after {
   transform: scaleX(1);
   opacity: 1 !important; 
@@ -396,4 +403,59 @@ body {
 }
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--nested > .md-nav:hover {
   border-left-color: rgba(97, 161, 101, 0.8) !important;
+}
+/* =========================================
+   16. 当前页面高亮样式：莫兰迪专属定制 (完美对齐版)
+========================================= */
+
+/* -----------------------------------------
+   1. 顶部主标签页 (Tabs) 选中样式
+----------------------------------------- */
+/* 双重类名叠加提高 CSS 权重，确保绝对生效 */
+.md-tabs__list .md-tabs__link.md-tabs__link--active {
+  /* 稍微加深透明度到 0.15，在白底上能明显看出是一个色块 */
+  background-color: rgba(97, 161, 101, 0.15) !important; 
+  color: #61A165 !important; 
+  font-weight: 800 !important;
+  border-radius: 8px !important; /* 圆角稍微大一点，更像一个按钮 */
+  padding: 8px 16px !important; /* 确保色块把文字包裹得更饱满 */
+  transition: all 0.2s ease-in-out !important; /* 核心：加入 0.2 秒的丝滑切换动画 */
+}
+
+/* 点击/按下的瞬间效果，增强物理反馈感 */
+.md-tabs__list .md-tabs__link:active {
+  transform: scale(0.95);
+}
+/* -----------------------------------------
+   2. 左侧目录栏 (Sidebar) 选中样式
+----------------------------------------- */
+/* 实现 "左侧一条莫兰迪绿竖线，右侧延伸淡色底板" 的优雅排版 */
+.md-nav__item .md-nav__link--active {
+  /* 1. 底色：与你引用的代码框完全同款的极浅莫兰迪绿 */
+  background-color: rgba(97, 161, 101, 0.08) !important;
+  
+  /* 2. 竖线：左侧加上一条主色的实体竖线 */
+  border-left: 3px solid #61A165 !important;
+  
+  /* 3. 文字：使用主色并加粗 */
+  color: #61A165 !important;
+  font-weight: 700 !important;
+  
+  /* 4. 微调间距：干掉之前夸张的平移，贴紧竖线留一点点呼吸空间 */
+  padding-left: 0.6rem !important; 
+  
+  /* 5. 边角：左侧因为有竖线设为直角，右侧保留微圆角 */
+  border-radius: 0 4px 4px 0 !important;
+  
+  /* 清除旧版可能残留的影响 */
+  box-shadow: none !important;
+}
+
+/* -----------------------------------------
+   3. 暗黑模式 (Slate) 侧边栏自适应
+----------------------------------------- */
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  background-color: rgba(97, 161, 101, 0.15) !important; /* 暗黑下加深一点透明度 */
+  border-left-color: #7EBA82 !important; /* 使用提亮的浅莫兰迪绿 */
+  color: #7EBA82 !important;
 }

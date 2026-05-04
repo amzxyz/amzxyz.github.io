@@ -64,6 +64,11 @@ patch:
     - lua/data/my_tips.txt
 ```
 
+```yaml
+  patch:
+    switches/@7/reset: 1   # @7 代表在 switches 的第8组里加入 reset: 1 参数,即可长期启用
+```
+
 ---
 
 ## 🧠 绝妙的按键复用逻辑

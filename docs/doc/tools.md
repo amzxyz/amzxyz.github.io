@@ -62,5 +62,12 @@
     * **PC 端**：工具通常会自动触发 Rime 的重新部署。
     * **移动端**：建议在工具操作完后，手动进入输入法 App 点击“重新部署”。
 
+如果您偏好轻量级脚本或非 Windows 环境，可以使用社区贡献的更新工具：
+
+* **Python / PowerShell 脚本**：
+👉 [rime-wanxiang-update-tools](https://github.com/rimeinn/rime-wanxiang-update-tools)
+* **Go 语言更新器**：
+👉 [rime-wanxiang-updater](https://github.com/ca-x/rime-wanxiang-updater)
+
 !!! tip "小建议"
     对于大多数用户，建议 **想起来，点一点**，即可保持万象处于最佳战斗状态，毕竟我们的词库进化速度不是一般项目可比。
