@@ -74,7 +74,7 @@ grammar:
   collocation_penalty: -10
   non_collocation_penalty: -5
   weak_collocation_penalty: -100
-  rear_penalty: -5
+  rear_penalty: -10
 ```
 
 这些枯燥的数字背后，隐藏着万象极致调优的秘密：
@@ -88,7 +88,7 @@ grammar:
 * **`weak_collocation_penalty: -100` (严厉的弱搭配惩罚)**
   “惩罚机制”是语言模型的灵魂。`-35` 是一个极具攻击性的惩罚值。它的存在，意味着万象会对那些“语法生硬、逻辑不通、极低频”的字词组合下狠手，直接将它们打入冷宫，彻底杜绝了候选词里出现“狗屁不通”组合的可能。
 
-* **`rear_penalty: -5` (尾部边界调优)**
+* **`rear_penalty: -10` (尾部边界调优)**
   针对句子末尾（如语气词、标点前）的特殊概率惩罚设定。它使得万象在处理“了吧”、“的呢”等句末结构时更加自然，贴合真实人类的表达习惯。
 
 ---

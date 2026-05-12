@@ -128,7 +128,7 @@ grammar:
   collocation_penalty: -10
   non_collocation_penalty: -5
   weak_collocation_penalty: -100
-  rear_penalty: -5
+  rear_penalty: -10
 ```
 
 ```yaml title="右：wanxiang.custom.yaml"
@@ -333,7 +333,8 @@ patch:
   # 注意这个值可只是个值不是表，下
   # 面这样写就意味着白名单只有两个字了
   # 如果想要自带+你的，则需要复制原来的再写上你的
-  charset/@0/addlist: "𰻝𰻞"
+  charset/@0/addlist:
+    - "𰻝𰻞"
 ```
 
 </div>
