@@ -113,7 +113,7 @@ body .md-content {
   <p>重塑 Rime 生态，带来极致的输入体验。</p>
   <div class="hero-buttons">
     <a href="doc/intro/" class="md-button md-button--primary">🚀 快速上手</a>
-    <a href="https://github.com/amzxyz/rime_wanxiang" class="md-button">⭐ GitHub 仓库</a>
+    <a href="https://github.com/amzxyz/rime-wanxiang" class="md-button">⭐ GitHub 仓库</a>
   </div>
 </div>
 

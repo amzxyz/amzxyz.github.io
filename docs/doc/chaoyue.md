@@ -18,7 +18,7 @@
 
 * ⚡ **国内高速节点 (CNB，免翻墙)**：[:octicons-link-external-24: 点击前往下载](https://cnb.cool/amzxyz/rime-wanxiang/-/releases)
 
-* 🌍 **国际开源节点 (GitHub)**：[:octicons-link-external-24: 点击前往下载](https://github.com/amzxyz/rime_wanxiang/releases)
+* 🌍 **国际开源节点 (GitHub)**：[:octicons-link-external-24: 点击前往下载](https://github.com/amzxyz/rime-wanxiang/releases)
 
 **📦 下载语法模型**
 

@@ -23,7 +23,7 @@
 
 ## ⚖️ 矩阵选择：标准版 vs 增强版
 
-万象主仓库 **[rime-wanxiang](https://github.com/amzxyz/rime_wanxiang)** 提供了两个截然不同的方案分支。请根据您的打字习惯，选择最适合您的基石：
+万象主仓库 **[rime-wanxiang](https://github.com/amzxyz/rime-wanxiang)** 提供了两个截然不同的方案分支。请根据您的打字习惯，选择最适合您的基石：
 
 | 对比维度 | 🟢 万象标准版 (Base) | 🔵 万象增强版 (Pro) |
 | :--- | :--- | :--- |
@@ -54,4 +54,4 @@
 ### 📈 参与共建
 万象生态的繁荣离不开开源社区的支持。欢迎在 GitHub 上为我们点亮 Star，您的每一次关注都是模型彻夜训练的动力！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=amzxyz/RIME-LMDG,amzxyz/rime_wanxiang&type=Date)](https://star-history.com/#amzxyz/RIME-LMDG&amzxyz/rime_wanxiang&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=amzxyz/RIME-LMDG,amzxyz/rime-wanxiang&type=Date)](https://star-history.com/#amzxyz/RIME-LMDG&amzxyz/rime-wanxiang&Date)

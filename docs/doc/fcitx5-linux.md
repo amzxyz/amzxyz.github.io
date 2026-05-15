@@ -36,7 +36,7 @@ sudo pacman -S rime-wanxiang-pro-zrm
 
 如果您使用的是 APT 或其他手动包管理方式，请下载万象方案包与模型文件：
 
-* **方案压缩包 (.zip)**：[CNB 极速下载](https://cnb.cool/amzxyz/rime-wanxiang/-/releases) | [GitHub 下载](https://github.com/amzxyz/rime_wanxiang/releases)
+* **方案压缩包 (.zip)**：[CNB 极速下载](https://cnb.cool/amzxyz/rime-wanxiang/-/releases) | [GitHub 下载](https://github.com/amzxyz/rime-wanxiang/releases)
 
 * **语法模型**：[wanxiang-lts-zh-hans.gram](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram)
 

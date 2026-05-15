@@ -18,7 +18,7 @@
 
 * ⚡ **国内高速节点 (CNB，免翻墙)**：[:octicons-link-external-24: 点击前往下载](https://cnb.cool/amzxyz/rime-wanxiang/-/releases)
 
-* 🌍 **国际开源节点 (GitHub)**：[:octicons-link-external-24: 点击前往下载](https://github.com/amzxyz/rime_wanxiang/releases)
+* 🌍 **国际开源节点 (GitHub)**：[:octicons-link-external-24: 点击前往下载](https://github.com/amzxyz/rime-wanxiang/releases)
 
 **📦 3. 下载语法模型**
 
@@ -52,7 +52,7 @@
 !!! warning "⚠️ 核心警告：切勿嵌套文件夹！"
     请进入解压出来的文件夹**内部**，将里面的**所有内容（文件和子文件夹）全选**，直接拖入并覆盖到 Rime 用户目录中。
 
-    **绝不能**把形如 `rime_wanxiang-**` 的外部根文件夹直接扔进去，否则小狼毫将完全无法读取！
+    **绝不能**把形如 `rime-wanxiang-**` 的外部根文件夹直接扔进去，否则小狼毫将完全无法读取！
 
 !!! info "配置文件说明（按需覆盖）"
     压缩包内包含了两个特殊的前端文件：

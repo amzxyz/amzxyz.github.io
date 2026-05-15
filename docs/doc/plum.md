@@ -25,7 +25,7 @@
 
 ```bash
 # 克隆定制版 Plum 到本地
-git clone -b plum --depth 1 https://github.com/amzxyz/rime_wanxiang.git
+git clone -b plum --depth 1 https://github.com/amzxyz/rime-wanxiang.git
 # 进入目录
 cd plum
 ```
@@ -63,11 +63,11 @@ export rime_frontend='fcitx/fcitx-rime'
 
     * **完整安装 (首次部署)**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-base:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-base:plum/full
     ```
     * **仅更新词库 (日常维护)**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-base:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-base:plum/dicts
     ```
 
 === "🔵 增强辅码版 (Pro 分包)"
@@ -76,52 +76,52 @@ export rime_frontend='fcitx/fcitx-rime'
 
     **1. 自然码辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-zrm-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-zrm-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-zrm-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-zrm-fuzhu:plum/dicts
     ```
     
     **2. 小鹤辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-flypy-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-flypy-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-flypy-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-flypy-fuzhu:plum/dicts
     ```
     
     **3. 墨奇辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-moqi-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-moqi-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-moqi-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-moqi-fuzhu:plum/dicts
     ```
     
     **4. 虎码辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-tiger-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-tiger-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-tiger-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-tiger-fuzhu:plum/dicts
     ```
     
     **5. 五笔辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-wubi-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-wubi-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-wubi-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-wubi-fuzhu:plum/dicts
     ```
     
     **6. 汉心辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-hanxin-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-hanxin-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-hanxin-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-hanxin-fuzhu:plum/dicts
     ```
     
     **7. 首右辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-shouyou-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-shouyou-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-shouyou-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-shouyou-fuzhu:plum/dicts
     ```
     **8. 首右+辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-shyplus-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-shyplus-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-shyplus-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-shyplus-fuzhu:plum/dicts
     ```
     **9. 万象辅助版**
     ```bash
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-wx-fuzhu:plum/full
-    bash rime-install amzxyz/rime_wanxiang@wanxiang-wx-fuzhu:plum/dicts
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-wx-fuzhu:plum/full
+    bash rime-install amzxyz/rime-wanxiang@wanxiang-wx-fuzhu:plum/dicts
     ```

@@ -2,8 +2,8 @@ site_name: 万象拼音
 site_url: https://amzxyz.github.io/
 site_description: 一个为提升rime拼音输入体验及生态构建的数据方案
 
-repo_url: https://github.com/amzxyz/rime_wanxiang
-repo_name: amzxyz/rime_wanxiang
+repo_url: https://github.com/amzxyz/rime-wanxiang
+repo_name: amzxyz/rime-wanxiang
 
 theme:
   name: material
@@ -117,6 +117,7 @@ nav:
       - 📚 词库管理与同步: doc/dicts.md
       - 📖 RIME配置手册: doc/RIME配置手册.md
       - 🧭 RIME配置指南: doc/RIME配置指南.md
+      - 🧭 按键映射列表: doc/key.md
       
   - 🌍 生态与附录:
       - 万象双拼键位图: doc/wanxiang_shuangpin.md
